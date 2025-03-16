@@ -59,9 +59,6 @@ function App() {
             emailValue={emailValue}
             phoneValue={phoneValue}
           />
-          <h2>Personal Display</h2>
-          <h2>Education Display</h2>
-          <h2>Experience Display</h2>
         </div>
       </section>
       {/* <DocumentTab>
