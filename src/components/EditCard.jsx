@@ -16,7 +16,7 @@ export default function EditCard({ symbol, title, children }) {
         <h2>{title}</h2>
         <button className="card-expand-btn" onClick={handleClick}></button>
       </div>
-      {open && <div className="card-content">{children}</div>}
+      <div className="card-content">{children}</div>
     </div>
   );
 }

@@ -30,3 +30,7 @@
 .card-header:hover {
   cursor: pointer;
 }
+
+.card-content {
+  padding: 1em;
+}
