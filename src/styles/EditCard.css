@@ -1,7 +1,7 @@
 .edit-card {
   border: 3px solid black;
   border-radius: 3rem;
-  padding: 1rem;
+  padding: 1em;
 }
 
 .card-header {
@@ -27,10 +27,6 @@
   margin-left: auto;
 }
 
-.card-expand-btn:hover {
+.card-header:hover {
   cursor: pointer;
-}
-
-.card-hidden {
-  display: none;
 }
