@@ -83,7 +83,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -102,10 +102,36 @@ video {
 }
 
 #root {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
 }
 
+/* EDIT */
+
 .edit-tab {
+  flex: 1;
+  max-width: 500px;
+  padding: 2em;
   background-color: var(--BG-COLOUR);
+}
+
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* DISPLAY */
+
+.doc-tab {
+  flex: 2;
+  background-color: var(--TEXT-LIGHT);
+  padding: 1em;
+}
+
+.doc-display {
+  background-color: #fff;
+  aspect-ratio: 1/1.414;
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
 }

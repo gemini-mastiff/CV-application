@@ -8,19 +8,25 @@ function App() {
   return (
     <>
       <section className="edit-tab">
-        <EditCard title="Personal Info" symbol={accountSvg}>
-          <h1>Test 1</h1>
-        </EditCard>
-        <EditCard title="Education" symbol={schoolSvg}>
-          <h1>Test 1</h1>
-        </EditCard>
-        <EditCard title="Experience" symbol={briefcaseSvg}>
-          <h1>Test 1</h1>
-        </EditCard>
+        <div className="edit-container">
+          <EditCard title="Personal Info" symbol={accountSvg}>
+            <h1>Test 1</h1>
+          </EditCard>
+          <EditCard title="Education" symbol={schoolSvg}>
+            <h1>Test 1</h1>
+          </EditCard>
+          <EditCard title="Experience" symbol={briefcaseSvg}>
+            <h1>Test 1</h1>
+          </EditCard>
+        </div>
       </section>
 
       <section className="doc-tab">
-        <h1>test 2</h1>
+        <div className="doc-display">
+          <h2>Personal Display</h2>
+          <h2>Education Display</h2>
+          <h2>Experience Display</h2>
+        </div>
       </section>
       {/* <DocumentTab>
       <PersonalDisplay />
