@@ -3,7 +3,7 @@ import schoolSvg from "./assets/school.svg";
 import briefcaseSvg from "./assets/briefcase.svg";
 import "./App.css";
 import EditCard from "./components/EditCard.jsx";
-import PersonalInput from "./components/PersonalInput.jsx";
+import Input from "./components/Input.jsx";
 import PersonalDisplay from "./components/PersonalDisplay.jsx";
 import { useState } from "react";
 
@@ -29,13 +29,18 @@ function App() {
       <section className="edit-tab">
         <div className="edit-container">
           <EditCard title="Personal Info" symbol={accountSvg}>
-            <PersonalInput
-              nameValue={nameValue}
-              nameOnChange={nameOnChange}
-              emailValue={emailValue}
-              emailOnChange={emailOnChange}
-              phoneValue={phoneValue}
-              phoneOnChange={phoneOnChange}
+            <Input name={"name"} value={nameValue} onChange={nameOnChange} />
+            <Input
+              name={"email"}
+              type="email"
+              value={emailValue}
+              onChange={emailOnChange}
+            />
+            <Input
+              name={"phone"}
+              type="phone"
+              value={phoneValue}
+              onChange={phoneOnChange}
             />
           </EditCard>
           <EditCard title="Education" symbol={schoolSvg}>
