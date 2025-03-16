@@ -2,7 +2,10 @@ import "../styles/PersonalDisplay.css";
 import emailSvg from "../assets/email.svg";
 import phoneSvg from "../assets/phone.svg";
 
-export default function PersonalDisplay({ nameValue, emailValue, phoneValue }) {
+export default function PersonalDisplay({ personalInfo }) {
+  const nameValue = personalInfo.name;
+  const emailValue = personalInfo.email;
+  const phoneValue = personalInfo.number;
   const isTrue = nameValue || emailValue || phoneValue;
 
   return (
