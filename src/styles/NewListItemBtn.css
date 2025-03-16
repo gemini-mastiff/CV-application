@@ -1,0 +1,16 @@
+.new-list-item-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+}
+
+.new-list-item-btn:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.new-list-item-btn > img {
+  width: 20px;
+}
