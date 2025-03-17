@@ -5,6 +5,7 @@ import "./App.css";
 import EditCard from "./components/EditCard.jsx";
 import Input from "./components/Input.jsx";
 import PersonalDisplay from "./components/PersonalDisplay.jsx";
+import EduItem from "./components/EduItem.jsx";
 import EducationInputList from "./components/EducationInputList.jsx";
 import NewListItemBtn from "./components/NewListItemBtn.jsx";
 import { useState } from "react";
@@ -65,12 +66,40 @@ function App() {
           </EditCard>
           <EditCard title="Education" symbol={schoolSvg}>
             {/* <EducationInputList educationArr={educationArr} /> */}
-            <Input name={"institution"} value={currEdu.institution} />
-            <Input name={"subject"} value={currEdu.subject} />
-            <Input name={"start"} type="date" value={currEdu.start} />
-            <Input name={"end"} type="date" value={currEdu.end} />
+            <Input
+              name={"institution"}
+              value={currEdu.institution}
+              onChange={(e) =>
+                setCurrEdu({ ...currEdu, institution: e.target.value })
+              }
+            />
+            <Input
+              name={"subject"}
+              value={currEdu.subject}
+              onChange={(e) =>
+                setCurrEdu({ ...currEdu, subject: e.target.value })
+              }
+            />
+            <Input
+              name={"start"}
+              type="date"
+              value={currEdu.start}
+              onChange={(e) =>
+                setCurrEdu({ ...currEdu, start: e.target.value })
+              }
+            />
+            <Input
+              name={"end"}
+              type="date"
+              value={currEdu.end}
+              onChange={(e) => setCurrEdu({ ...currEdu, end: e.target.value })}
+            />
             <label htmlFor="eduDesc">DESCRIPTION:</label>
-            <textarea name="eduDesc" id="eduDesc"></textarea>
+            <textarea
+              name="eduDesc"
+              id="eduDesc"
+              onChange={(e) => setCurrEdu({ ...currEdu, desc: e.target.value })}
+            ></textarea>
             <NewListItemBtn />
           </EditCard>
           <EditCard title="Experience" symbol={briefcaseSvg}>
@@ -82,6 +111,9 @@ function App() {
       <section className="doc-tab">
         <div className="doc-display">
           <PersonalDisplay personalInfo={personalInfo} />
+          {/* Generate this dynamically and format it to look nice */}
+          <h2 className="education-header">EDUCATION</h2>
+          <EduItem eduObj={currEdu} />
         </div>
       </section>
       {/* <DocumentTab>
