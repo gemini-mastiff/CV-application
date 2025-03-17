@@ -1,10 +1,20 @@
 import "../styles/Input.css";
 
-export default function Input({ name, type = "text", value, onChange }) {
+export default function Input({
+  type = "text",
+  value,
+  onChange,
+  onKeyDown,
+  onBlur,
+}) {
   return (
-    <>
-      <label htmlFor={name}>{name + ":"}</label>
-      <input type={type} id={name} value={value} onChange={onChange} />
-    </>
+    <input
+      autoFocus
+      value={value}
+      type={type}
+      onChange={onChange}
+      onKeyDown={onKeyDown}
+      onBlur={onBlur}
+    />
   );
 }

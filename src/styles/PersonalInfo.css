@@ -1,0 +1,21 @@
+.personal-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.personal-name {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.contact-item > img {
+  width: 20px;
+}
