@@ -104,35 +104,3 @@ video {
 #root {
   display: flex;
 }
-
-/* EDIT */
-
-.edit-tab {
-  flex: 1;
-  max-width: 500px;
-  padding: 2em;
-  background-color: var(--BG-COLOUR);
-}
-
-.edit-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-
-/* DISPLAY */
-
-.doc-tab {
-  flex: 2;
-  background-color: var(--TEXT-LIGHT);
-  padding: 1em;
-}
-
-.doc-display {
-  background-color: #fff;
-  aspect-ratio: 1/1.414;
-  width: 80%;
-  max-width: 700px;
-  margin: auto;
-  padding: 2em;
-}
