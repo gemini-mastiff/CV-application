@@ -4,11 +4,22 @@
   align-items: center;
 }
 
+.personal-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAME */
+
 .personal-name {
   font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   font-weight: bold;
 }
+
+/* CONTACT ITEMS */
 
 .contact-item {
   display: flex;
@@ -18,4 +29,32 @@
 
 .contact-item > img {
   width: 20px;
+}
+
+/* BTN CONTAINER */
+
+.btn-container {
+  display: none;
+  padding: 1em;
+}
+
+.personal-info-container:hover > .btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-btn,
+.save-btn {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+}
+
+button > img {
+  width: 25px;
+}
+
+button:hover > img {
+  opacity: 0.6;
 }
