@@ -1,7 +1,6 @@
 .list-item-container {
   display: flex;
   align-items: center;
-  margin-bottom: 1em;
 }
 
 .list-item {
@@ -37,7 +36,7 @@
 
 .topic,
 .desc {
-  margin-left: 1em;
+  margin: 0 1em;
 }
 
 /* INPUT */
@@ -52,12 +51,22 @@
 }
 
 .input .desc {
-  width: 100%;
+  width: 60%;
   font: inherit;
   border: none;
   border-radius: 0.25em;
   background-color: var(--BG-COLOUR);
   padding: 0.25em 0.5em;
+}
+
+.date-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.end-input {
+  display: flex;
+  align-items: center;
 }
 
 /* BTN CONTAINER */

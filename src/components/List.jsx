@@ -8,7 +8,6 @@ export default function List({ title, arr }) {
   console.log(listArr);
 
   const handleAdd = () => {
-    console.log("TEST");
     setListArr([
       ...listArr,
       {
