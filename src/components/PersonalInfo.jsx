@@ -51,9 +51,7 @@ export default function PersonalInfo() {
   return (
     <div className="personal-info-container">
       <div className="personal-info">
-        <h2 className="personal-name" onClick={() => setName(true)}>
-          {name}
-        </h2>
+        <h2 className="personal-name">{name}</h2>
         <div className="contact-info">
           <div className="contact-item">
             {email && <img src={emailSvg} alt="" />}
