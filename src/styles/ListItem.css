@@ -1,0 +1,92 @@
+.list-item-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.list-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  width: 90%;
+  margin: 1em auto;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.place {
+  font-size: 1.2rem;
+}
+
+.topic {
+  font-style: italic;
+}
+
+.topic,
+.desc {
+  margin-left: 1em;
+}
+
+/* INPUT */
+
+.input {
+  gap: 1em;
+}
+
+.input .topic,
+.input .desc {
+  width: fit-content;
+}
+
+.input .desc {
+  width: 100%;
+  font: inherit;
+  border: none;
+  border-radius: 0.25em;
+  background-color: var(--BG-COLOUR);
+  padding: 0.25em 0.5em;
+}
+
+/* BTN CONTAINER */
+
+.btn-container {
+  display: none;
+  padding: 0.75em;
+}
+
+.list-item-container:hover > .btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+.edit-btn,
+.save-btn,
+.del-btn {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+}
+
+button > img {
+  width: 25px;
+}
+
+button:hover > img {
+  opacity: 0.6;
+}

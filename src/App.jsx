@@ -1,25 +1,30 @@
+import AddItemBtn from "./components/AddItemBtn.jsx";
 import PersonalInfo from "./components/PersonalInfo.jsx";
+import List from "./components/List.jsx";
 import "./styles/App.css";
 
 function App() {
+  const initEdu = [
+    {
+      key: crypto.randomUUID(),
+      place: "Clown College",
+      topic: "B.S Goofing Around",
+      start: "2001-06",
+      end: "2004-09",
+      desc: "- What a silly boy",
+    },
+  ];
+
   return (
     <>
       <h1 className="app-title">CV Maker</h1>
       <main className="cv-app">
         <PersonalInfo />
-        <hr />
+        <hr className="section-divider" />
         <div className="education-container">
-          <h2>Education</h2>
-          <button>Add Item</button>
-          <div className="education-item">
-            <h3>Institution Name</h3>
-            <h3>Degree</h3>
-            <p>Jan 2025</p>
-            <p>Mar 2025</p>
-            <p>Optional Description</p>
-          </div>
-          <hr />
+          <List title="Education" arr={initEdu} />
         </div>
+        <hr className="section-divider" />
         <div className="experience-container">
           <h2>Experience</h2>
           <button>Add Item</button>
