@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font: inherit;
   background: none;
   border: none;
 }
 
 .new-list-item-btn:hover {
-  background-color: grey;
+  opacity: 0.6;
   cursor: pointer;
 }
 
