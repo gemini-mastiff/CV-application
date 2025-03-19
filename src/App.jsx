@@ -11,7 +11,20 @@ function App() {
       topic: "B.S Goofing Around",
       start: "2001-06",
       end: "2004-09",
-      desc: "- What a silly boy",
+      present: false,
+      desc: "- What a silly boy!",
+    },
+  ];
+
+  const initExp = [
+    {
+      key: crypto.randomUUID(),
+      place: "Big Top Circus",
+      topic: "Senior Goofball",
+      start: "2005-08",
+      end: "2025-03",
+      present: true,
+      desc: "- I've seen too many things.",
     },
   ];
 
@@ -26,15 +39,7 @@ function App() {
         </div>
         <hr className="section-divider" />
         <div className="experience-container">
-          <h2>Experience</h2>
-          <button>Add Item</button>
-          <div className="education-item">
-            <h3>Employer</h3>
-            <h3>Role</h3>
-            <p>Jan 2025</p>
-            <p>Mar 2025</p>
-            <p>Optional Description</p>
-          </div>
+          <List title="Experience" arr={initExp} />
         </div>
       </main>
     </>
