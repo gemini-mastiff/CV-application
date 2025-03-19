@@ -8,6 +8,25 @@
   background-color: var(--MAIN-COLOUR);
   width: 80%;
   max-width: 1100px;
+  border-radius: 0.75em;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
+  box-shadow: 2px 3px 5px 0px #6d6d6d;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+input {
+  font: inherit;
+  border: none;
+  border-radius: 0.25em;
+  background-color: var(--BG-COLOUR);
+  padding: 0.25em 0.5em;
+  margin: 0.25em;
+}
+
+input:focus {
+  border: 1px solid black;
 }
