@@ -8,14 +8,15 @@ export default function List({ title, arr }) {
   console.log(listArr);
 
   const handleAdd = () => {
+    console.log("TEST");
     setListArr([
-      ...arr,
+      ...listArr,
       {
         key: crypto.randomUUID(),
         place: "",
         topic: "",
-        start: "01-2001",
-        end: "01-2001",
+        start: "2001-01",
+        end: "2001-01",
         desc: "",
       },
     ]);
