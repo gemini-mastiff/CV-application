@@ -33,7 +33,7 @@ function formatDate(date) {
 export default function ListItem({ listItem, handleDel, handleSave }) {
   const [isEditing, setIsEditing] = useState(false);
   const [item, setItem] = useState(listItem);
-  const [isPresent, setIsPresent] = useState(false);
+  const [isPresent, setIsPresent] = useState(item.present);
 
   const handleCheck = () => {
     setIsPresent(!isPresent);
