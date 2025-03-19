@@ -35,7 +35,7 @@
 
 .btn-container {
   display: none;
-  padding: 1em;
+  padding: 0.75em;
 }
 
 .personal-info-container:hover > .btn-container {
