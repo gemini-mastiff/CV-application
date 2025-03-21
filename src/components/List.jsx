@@ -25,7 +25,7 @@ export default function List({ title, arr }) {
     <div className="list-container">
       <div className="list-header">
         <h2>{title}</h2>
-        <AddItemBtn handleClick={handleAdd} />
+        <AddItemBtn className="add-item-btn" handleClick={handleAdd} />
       </div>
       <div className="list">
         {listArr.map((listItem) => {

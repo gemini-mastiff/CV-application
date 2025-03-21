@@ -1,4 +1,4 @@
-.new-list-item-btn {
+.add-item-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,11 +7,11 @@
   border: none;
 }
 
-.new-list-item-btn:hover {
+.add-item-btn:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 
-.new-list-item-btn > img {
+.add-item-btn > img {
   width: 20px;
 }

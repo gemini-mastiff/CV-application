@@ -13,3 +13,11 @@
   display: flex;
   flex-direction: column;
 }
+
+.add-item-btn {
+  display: none;
+}
+
+.list-header:hover > .add-item-btn {
+  display: flex;
+}
