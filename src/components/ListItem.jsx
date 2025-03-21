@@ -66,7 +66,7 @@ export default function ListItem({ listItem, handleDel, handleSave }) {
                     value={item.end}
                     onChange={(e) => setItem({ ...item, end: e.target.value })}
                   />
-                  <div className="checkbox container">
+                  <div className="checkbox-container">
                     <input
                       name="present"
                       type="checkbox"

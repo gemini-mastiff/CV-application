@@ -69,6 +69,10 @@
   align-items: center;
 }
 
+.checkbox-container > input {
+  margin: 0.5em;
+}
+
 /* BTN CONTAINER */
 
 .btn-container {
