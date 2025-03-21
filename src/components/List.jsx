@@ -5,7 +5,6 @@ import ListItem from "./ListItem.jsx";
 
 export default function List({ title, arr }) {
   const [listArr, setListArr] = useState(arr);
-  console.log(listArr);
 
   const handleAdd = () => {
     setListArr([
